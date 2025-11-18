@@ -1,0 +1,89 @@
+.tela {
+    display: none;
+}
+.tela.ativa {
+    display: block;
+}
+body, ion-content {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+.buttonSenha {
+    margin-right: -10px;
+}
+ion-button {
+    margin-top: 30px;
+    margin-left: 60px;
+    margin-right: 60px;
+    --border-radius: 12px;
+    --padding-start: 20px;
+    --padding-end: 20px;
+}
+.btnSair {
+    margin-top: 50px;
+    margin-left: 160px;
+    margin-right: 160px;
+}
+.lista  {
+    margin-right: 20px;
+}
+#mensagem {
+    margin-left: 40px;
+    margin-right: 40px;
+    text-align: justify;
+}
+a {
+    color: #3880ff;
+    text-decoration: none;
+    cursor: pointer;
+}
+a:hover {
+    text-decoration: underline;
+    opacity: 0.8;
+}
+.message {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0,0,0,0.5);
+    z-index: 9999;
+    padding: 16px;
+    box-sizing: border-box;
+}
+.message.active {
+    display: flex;
+}
+.message .modal {
+    background: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    max-width: 90%;
+    width: 340px;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.3);
+    text-align: left;
+}
+.message .modal .title {
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+.message .modal .details2 {
+    font-size: 0.9em;
+    color: #555;
+    margin-bottom: 12px;
+    white-space: pre-wrap;
+}
+.message .modal .btnMessage {
+    padding: 8px 14px;
+    border-radius: 8px;
+    border: none;
+    background: #3880ff;
+    color: #fff;
+    cursor: pointer;
+}
